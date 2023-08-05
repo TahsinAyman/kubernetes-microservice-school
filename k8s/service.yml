@@ -6,6 +6,6 @@ spec:
   selector:
     app: school-deployment
   ports:
-    - port: 8089
+    - port: 8080
       targetPort: 8080
       protocol: TCP
