@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: school-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: school-deployment
+  template:
+    metadata:
+      labels:
+        app: school-deployment
+    spec:
+      containers:
+        - name: school-deployment
+          image: tahsinayman/kubernetes-microservice-school:latest
