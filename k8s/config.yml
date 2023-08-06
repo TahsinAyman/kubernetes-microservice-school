@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: school-configmap
+data:
+  STUDENT_URL: "http://student-service:8002"
+  DB_HOST: "0.0.0.0"
+  DB_PORT: "3333"
+  DB_USERNAME: "root"
+  DB_PASSWORD: "root"

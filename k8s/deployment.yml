@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: school-deployment
 spec:
-  replicas: 3
+  # replicas: 3
   selector:
     matchLabels:
       app: school-deployment
@@ -15,3 +15,10 @@ spec:
       containers:
         - name: school-deployment
           image: tahsinayman/kubernetes-microservice-school:latest
+          resources:
+            limits:
+              cpu: "200m"
+              memory: "200Mi"
+          envFrom:
+            - configMapRef:
+                name: school-configmap
