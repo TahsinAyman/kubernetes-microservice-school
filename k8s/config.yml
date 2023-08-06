@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: school-configmap
 data:
-  STUDENT_URL: "http://student-service:8080"
+  STUDENT_URL: "http://student-service:8002"
   DB_HOST: "192.168.0.122"
   DB_PORT: "3333"
   DB_USERNAME: "root"
