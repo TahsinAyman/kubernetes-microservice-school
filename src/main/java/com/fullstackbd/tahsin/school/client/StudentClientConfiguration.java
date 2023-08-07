@@ -13,7 +13,6 @@ public class StudentClientConfiguration {
     private String STUDENT_URL = null;
     @Bean
     public WebClient studentWebClient() {
-        System.out.println(STUDENT_URL);
         return WebClient
                 .builder()
                 .baseUrl(STUDENT_URL)

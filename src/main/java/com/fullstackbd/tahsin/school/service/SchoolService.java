@@ -13,4 +13,5 @@ public interface SchoolService {
     School save(School school);
     School save(Long id, School school);
     School deleteById(Long id);
+
 }

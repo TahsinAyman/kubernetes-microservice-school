@@ -11,5 +11,3 @@ public class SchoolApplication {
 	}
 
 }
-// hello
-// nup

@@ -1,8 +1,13 @@
 spring:
   profiles:
     active: dev
+  kafka:
+    consumer:
+      group-id: school-consumer
 ---
 spring:
+  kafka:
+    bootstrap-servers: localhost:9092
   config:
     activate:
       on-profile: dev
@@ -21,6 +26,8 @@ microservice:
   student: http://localhost:8002
 ---
 spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_HOST}:${KAFKA_PORT}
   config:
     activate:
       on-profile: prod
